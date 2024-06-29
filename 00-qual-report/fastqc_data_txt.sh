@@ -1,4 +1,5 @@
 #!/bin/bash
+# programmer:Bhaskara GB
 #This script processes FastQC results to extract the total number of sequences from each fastqc_data.txt file 
 #and compiles this information into a CSV file.
 
