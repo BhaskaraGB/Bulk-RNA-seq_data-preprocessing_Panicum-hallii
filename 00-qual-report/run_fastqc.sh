@@ -1,3 +1,8 @@
+#!/bin/bash
+#Programmer:Bhaskara GB
+
+#This script run fastqc command to provide quality report for all fastq raw files
+
 # Step 1: Activate the fastqc_env in terminal (conda activate fastqc_env).
 
 # Step 2: Navigate to the directory where you want to store your input files and output results. 
