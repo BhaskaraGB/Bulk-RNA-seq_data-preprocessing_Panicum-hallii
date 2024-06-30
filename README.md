@@ -45,9 +45,9 @@ This directory contains scripts for filtering and quality control of FASTQ files
    - **Usage**: This script uses Cutadapt to remove adapter sequences and filter out low-quality reads, preparing the data for further analysis.
 
 2. **QC_qual_filter.sh**:
-   - **Purpose**: Performs additional quality filtering on the trimmed FASTQ files.
-   - **Usage**: This script applies further quality filtering criteria to ensure that only high-quality reads are retained for downstream analysis.
-
+   - **Purpose**: Extracting quality report for the trimmed FASTQ files.
+   - **Usage**: This script uses fastqc ensures that only high-quality reads are retained for downstream analysis.
+   - 
 3. **fastqc_data_txt.sh**:
    - **Purpose**: Extracts specific data from the FastQC output.
    - **Usage**: This script processes the FastQC output files to extract relevant quality metrics and summary statistics after filtering.
