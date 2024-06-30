@@ -1,4 +1,4 @@
-# RNA-seq_analysis
+# Bulk RNA-seq_analysis
 Pipeline for 3'-mRNA seq (Tag-Seq) analysis
 
 ## 00-qual_report Directory
