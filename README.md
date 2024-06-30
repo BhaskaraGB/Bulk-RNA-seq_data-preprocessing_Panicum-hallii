@@ -1,7 +1,7 @@
 # Bulk RNA-seq Analysis
 Pipeline for 3'-mRNA seq (Tag-Seq) analysis
 
-## 00-qual_report Directory
+## 00-qual_report
 
 This directory contains scripts to generate quality reports for raw FASTQ files. The scripts are designed to be run in a Conda environment and provide detailed quality control (QC) reports. Below is a brief summary of each script:
 
@@ -30,9 +30,9 @@ This directory contains scripts to generate quality reports for raw FASTQ files.
 3. **Data Extraction**:
    - Use `fastqc_data_txt.sh` to extract and summarize specific quality metrics from the FastQC output files, providing a concise overview of the results.
 
+---
 
-
-## 01-qual_filter Directory
+## 01-qual_filter
 
 This directory contains scripts for filtering and quality control of FASTQ files. The scripts are designed to be run in a Conda environment and perform trimming, quality filtering, and subsequent quality control (QC) reporting. Below is a brief summary of each script:
 
@@ -60,9 +60,7 @@ This directory contains scripts for filtering and quality control of FASTQ files
 
 3. **Running FastQC**:
    - Use `fastqc_data_txt.sh` to perform quality control analysis on the filtered FASTQ files. This script will generate detailed QC reports and extract key metrics for review.
-  
-Thank you for the correction. Here is the updated README section for the `02-mapping` directory, reflecting that the output format is SAM rather than BAM:
-
+ 
 ---
 
 ## 02-mapping Directory
