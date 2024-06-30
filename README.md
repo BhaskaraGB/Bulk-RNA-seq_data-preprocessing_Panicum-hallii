@@ -56,7 +56,7 @@ This directory contains scripts for filtering and quality control of FASTQ files
    - Use `cutadapt.sh` to trim adapter sequences and low-quality bases from the raw FASTQ files. This step ensures that the reads are clean and suitable for quality filtering.
 
 2. **Quality Filtering**:
-   - Use `QC_qual_filter.sh` to apply additional quality filtering to the trimmed FASTQ files. This step further refines the data by removing low-quality reads.
+   - Use `QC_qual_filter.sh` This script uses fastqc ensures that only high-quality reads are retained for downstream analysis.
 
 3. **Running FastQC**:
    - Use `fastqc_data_txt.sh` to perform quality control analysis on the filtered FASTQ files. This script will generate detailed QC reports and extract key metrics for review.
