@@ -60,5 +60,29 @@ This directory contains scripts for filtering and quality control of FASTQ files
 
 3. **Running FastQC**:
    - Use `fastqc_data_txt.sh` to perform quality control analysis on the filtered FASTQ files. This script will generate detailed QC reports and extract key metrics for review.
+  
+Thank you for the correction. Here is the updated README section for the `02-mapping` directory, reflecting that the output format is SAM rather than BAM:
+
+---
+
+## 02-mapping Directory
+
+This directory contains a script for aligning sequencing reads to a reference genome using the BWA-MEM algorithm. The script is designed to be run in a Conda environment and performs read alignment, generating aligned sequences in SAM format. Below is a brief summary of the script:
+
+### Script
+
+1. **bwa-mem.sh**:
+   - **Purpose**: Aligns sequencing reads to a reference genome using the BWA-MEM algorithm.
+   - **Usage**: This script takes raw or preprocessed FASTQ files and aligns them to a specified reference genome, outputting the results in SAM format for further analysis.
+
+### Workflow
+
+1. **Read Alignment**:
+   - Use `bwa-mem.sh` to perform read alignment. This step maps the sequencing reads to the reference genome, producing aligned sequences in SAM format.
+
+
+
+
+
 
 
