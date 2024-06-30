@@ -1,7 +1,7 @@
 # RNA-seq_analysis
 Pipeline for 3'-mRNA seq (Tag-Seq) analysis
 
-## 01-qual_report Directory
+## 00-qual_report Directory
 
 This directory contains scripts to generate quality reports for raw FASTQ files. The scripts are designed to be run in a Conda environment and provide detailed quality control (QC) reports. Below is a brief summary of each script:
 
