@@ -29,6 +29,38 @@ This directory contains scripts to generate quality reports for raw FASTQ files.
 
 3. Data Extraction:
    - Use `fastqc_data_txt.sh` to extract and summarize specific quality metrics from the FastQC output files, providing a concise overview of the results.
+  
+Here's a brief summary for the `01-qual-filter` directory and its contents to include in your `README.md` file on GitHub:
 
+---
+
+## 01-qual_filter Directory
+
+This directory contains scripts for filtering and quality control of FASTQ files. The scripts are designed to be run in a Conda environment and perform trimming, quality filtering, and subsequent quality control (QC) reporting. Below is a brief summary of each script:
+
+### Scripts
+
+1. **cutadapt.sh**:
+   - **Purpose**: Trims adapters and low-quality bases from the FASTQ files.
+   - **Usage**: This script uses Cutadapt to remove adapter sequences and filter out low-quality reads, preparing the data for further analysis.
+
+2. **QC_qual_filter.sh**:
+   - **Purpose**: Performs additional quality filtering on the trimmed FASTQ files.
+   - **Usage**: This script applies further quality filtering criteria to ensure that only high-quality reads are retained for downstream analysis.
+
+3. **fastqc_data_txt.sh**:
+   - **Purpose**: Extracts specific data from the FastQC output.
+   - **Usage**: This script processes the FastQC output files to extract relevant quality metrics and summary statistics after filtering.
+
+### Workflow
+
+1. **Adapter Trimming**:
+   - Use `cutadapt.sh` to trim adapter sequences and low-quality bases from the raw FASTQ files. This step ensures that the reads are clean and suitable for quality filtering.
+
+2. **Quality Filtering**:
+   - Use `QC_qual_filter.sh` to apply additional quality filtering to the trimmed FASTQ files. This step further refines the data by removing low-quality reads.
+
+3. **Running FastQC**:
+   - Use `fastqc_data_txt.sh` to perform quality control analysis on the filtered FASTQ files. This script will generate detailed QC reports and extract key metrics for review.
 
 
