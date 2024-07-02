@@ -63,7 +63,7 @@ This directory contains scripts for filtering and quality control of FASTQ files
  
 ---
 
-## 02-mapping Directory
+## 02-mapping
 
 This directory contains a script for aligning sequencing reads to a reference genome using the BWA-MEM algorithm. The script is designed to be run in a Conda environment and performs read alignment, generating aligned sequences in SAM format. Below is a brief summary of the script:
 
