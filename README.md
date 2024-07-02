@@ -112,13 +112,6 @@ This directory contains scripts for converting SAM files to BAM format, filterin
 3. **Generating Mapping Statistics**:
    - The final step involves generating comprehensive mapping statistics for the filtered and duplicate-marked BAM files. These statistics help evaluate the quality and efficiency of the mapping process, providing insights into the overall data quality.
 
-### Example Usage
-
-1. **Set up Conda Environment**:
-   - Create and activate a Conda environment with the necessary tools (e.g., SAMtools, Picard).
-
-2. **Run Workflow**:
-   - Follow the workflow steps to convert and filter reads, mark duplicates, and generate mapping statistics, ensuring reliable data for downstream analysis.
 
 
 
