@@ -78,6 +78,47 @@ This directory contains a script for aligning sequencing reads to a reference ge
 1. **Read Alignment**:
    - Use `bwa-mem.sh` to perform read alignment. This step maps the sequencing reads to the reference genome, producing aligned sequences in SAM format.
 
+---
+Here's a revised summary for the `03-map-filter` directory to include in your `README.md` file on GitHub, focusing on the process and purpose without providing specific script commands:
+
+---
+
+## 03-map-filter
+
+This directory contains scripts for converting SAM files to BAM format, filtering and sorting BAM files, marking duplicates, and generating mapping statistics as part of an RNA-seq data processing pipeline. These scripts are designed to be run in a Conda environment, ensuring reproducibility and ease of use.
+
+### Scripts
+
+1. **samtoolsfilter.sh**:
+   - **Purpose**: Converts SAM files to BAM format, filters out reads with a mapping quality less than 30, and sorts the BAM files.
+   - **Functionality**: Uses SAMtools to ensure that only high-quality, properly sorted reads are retained for further analysis.
+
+2. **markdup.sh**:
+   - **Purpose**: Marks duplicate reads in the filtered and sorted BAM files.
+   - **Functionality**: Utilizes Picard to identify and mark duplicate reads, which can result from PCR amplification during library preparation. Marking duplicates is essential for accurate downstream analysis.
+
+3. **map-stat.sh**:
+   - **Purpose**: Generates mapping statistics for the filtered and duplicate-marked BAM files.
+   - **Functionality**: Employs tools like SAMtools or Picard to produce comprehensive mapping statistics, helping to assess the quality and efficiency of the mapping process.
+
+### Workflow
+
+1. **Converting and Filtering Reads**:
+   - The first step is to convert SAM files to BAM format. During this process, reads with a mapping quality less than 30 are filtered out, and the resulting BAM files are sorted. This ensures that only high-quality, properly sorted reads are retained for further analysis.
+
+2. **Marking Duplicates**:
+   - The next step is to mark duplicate reads in the filtered and sorted BAM files. Duplicate reads, which can result from PCR amplification during library preparation, are identified and marked to minimize their impact on downstream analyses.
+
+3. **Generating Mapping Statistics**:
+   - The final step involves generating comprehensive mapping statistics for the filtered and duplicate-marked BAM files. These statistics help evaluate the quality and efficiency of the mapping process, providing insights into the overall data quality.
+
+### Example Usage
+
+1. **Set up Conda Environment**:
+   - Create and activate a Conda environment with the necessary tools (e.g., SAMtools, Picard).
+
+2. **Run Workflow**:
+   - Follow the workflow steps to convert and filter reads, mark duplicates, and generate mapping statistics, ensuring reliable data for downstream analysis.
 
 
 
