@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Purpose of the Script
-#The script is designed to:
-
 # 1. Extract sample names from a metadata file (meta_noheader).
 # 2. Find FASTQ files corresponding to these sample names in the specified input directory (fastq_files).
 # 3. Concatenate these FASTQ files and store the result in an output directory (concat_files).
