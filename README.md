@@ -116,10 +116,6 @@ This directory contains scripts for converting SAM files to BAM format, filterin
 
 ---
 
-Here's a revised summary for the `04-count` directory to include in your `README.md` file on GitHub, specifically mentioning the `featureCount.sh` script:
-
----
-
 ## 04-count
 
 This directory contains a script named `featureCount.sh` for counting the number of mapped reads in RNA-seq data using the featureCounts tool. The script processes BAM files to generate read counts for each gene, facilitating downstream differential expression analysis. Below is a summary of the script's purpose and workflow:
