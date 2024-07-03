@@ -1,5 +1,5 @@
 #!/bin/bash
-#Programmer:Bhaskara GB
+# Author:Bhaskara GB
 
 #This script run fastqc command to provide quality report for all fastq raw files
 
