@@ -1,8 +1,4 @@
 #!/bin/bash
-
-#activate bwa envrionment in conda 
-#NOTE: To use BWA, you need to first index the genome with `bwa index'.
-
 # Set the directories and files
 TRIMMED_DIR="/Users/bhaskara/Documents/PH_Stress_2019_Tagseq/01-qual-filter/qual_filter_files"
 OUTPUT_DIR="BWA_Mapping"
