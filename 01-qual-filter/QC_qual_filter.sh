@@ -1,16 +1,15 @@
-#Actiavte trim-galore in conda. 
-#Trim-galore includes packages for fastqc and cutadapt
+#Trim-galore is wrapper includes packages for fastqc and cutadapt
 
 # Define the directories
-#TRIMMED_DIR="qual_filter_files"
+TRIMMED_DIR="qual_filter_files"
 TRIMMED_QC_DIR="qual_filter_QC_files"
 
-# Create the directories if it doesn't exist
+# Create the directory if it doesn't exist
 #mkdir -p "$TRIMMED_DIR"
 #mkdir -p "$TRIMMED_QC_DIR"
 
-#echo "Running fastqc on trimmed fastq data ..."
-#fastqc "$TRIMMED_DIR"/*_clean.fastq -t 10 --nogroup -o "$TRIMMED_QC_DIR"
+echo "Running fastqc on trimmed fastq data ..."
+fastqc "$TRIMMED_DIR"/*_clean.fastq -t 10 --nogroup -o "$TRIMMED_QC_DIR"
 
 # Unzip fastqc.zip files for fastqc_data.txt and summary.txt files
 echo "Unzipping FastQC results..."
