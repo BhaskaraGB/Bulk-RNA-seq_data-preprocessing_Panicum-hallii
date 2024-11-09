@@ -6,20 +6,20 @@ The scripts are designed to be run in a Conda environment.
 
 ## 00-qual_report
 
-This directory contains scripts to generate quality reports for raw FASTQ files. 
+This directory contains scripts to generate quality reports for raw FASTQ files. These scripts perform concatenation of multiple files for each sample that are run on two or more sequencing lanes for more sequencing coverage, run fastqc tools for quality check and then extract data for quality metrics and summary statistics 
 
-### Scripts Overview
+### Scripts Overview 
 
-1. **concat.sh**:
+1. **concat.sh*:
   - This script finds all FASTQ files corresponding to each sample, concatenates them, and prepares them for quality analysis.
 
-2. **fastqc_data_txt.sh**:
-   - **Purpose**: Extracts specific data from the FASTQC output.
-   - **Usage**: This script processes the FASTQC output files to extract relevant quality metrics and summary statistics.
+2. **run_fastqc.sh*:
+   - This script runs the FastQC tool on all raw FASTQ files in the directory, generating HTML and text reports detailing the QC reports for each file.
 
-3. **run_fastqc.sh**:
-   - **Purpose**: Runs the FastQC tool on the raw FASTQ files.
-   - **Usage**: This script executes FastQC on all FASTQ files in the directory, generating detailed QC reports for each file.
+3. **fastqc_data_txt.sh*:
+   - This script processes the FASTQC output files to extract relevant quality metrics and summary statistics.
+
+
 
 ### Workflow
 
