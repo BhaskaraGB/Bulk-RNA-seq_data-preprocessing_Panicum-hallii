@@ -8,13 +8,13 @@ The scripts are designed to be run in a Conda environment.
 
 This directory contains three scripts that are used for generating quality reports on raw FASTQ files. 
 
-1. **concat.sh*:
+1. *concat.sh*:
   - This script finds all FASTQ files corresponding to each sample, concatenates them, and prepares them for quality analysis.
 
-2. **run_fastqc.sh*:
+2. *run_fastqc.sh*:
    - This script runs the FastQC tool on all raw FASTQ files in the directory, generating HTML and text reports detailing the QC reports for each file.
 
-3. **fastqc_data_txt.sh*:
+3. *fastqc_data_txt.sh*:
    - This script processes the FASTQC output files to extract relevant quality metrics and summary statistics.
 
 
